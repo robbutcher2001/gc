@@ -8,7 +8,7 @@ const input = process.argv
   .filter(Boolean)
   .join("-")
   .replaceAll(/\s+/g, "-")
-  .replaceAll(/['"]+/g, "")
+  .replaceAll(/[.,'"$£%&?+_()[\]]+/g, "")
   .toLowerCase();
 
 if (!input) {
